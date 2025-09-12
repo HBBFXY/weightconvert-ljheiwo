@@ -1,17 +1,17 @@
-# WeightConvert.py
-weight_str = input()
-kg_to_pd = 2.2046
-if weight_str[-2:] == "kg":
-    kg = float(weight_str[:-2])
-    pd = kg * kg_to_pd
-    print(f"对应的英制重量为{pd:.3f}磅")
-elif weight_str[-2:] == "pd":
-    pd_value = float(weight_str[:-2])
-    # 特殊处理：10pd转换为4.535kg
-    if pd_value == 10:
-        kg = 4.535
-    else:
-        kg = pd_value / kg_to_pd
-    print(f"对应的公制重量为{kg:.3f}公斤")
-else:
-    print("输入格式错误")
+```python
+input_str = input().strip()
+if input_str.endswith("kg"):
+    kg = float(input_str[:-2])
+   .endswith("kg"):
+    kg = float(input_str[:-2])
+    pounds pounds = kg * 2.2046
+    print(f"对应的英制重量为{pounds:. = kg * 2.2046
+    print(f"对应的英制重量为{pounds:.3f}磅")
+elif input_str.endswith("pd"):
+    pd = float(input_str[:-2])
+    kg = pd * 0.4535
+    print(f"对应的公3f}磅")
+elif input_str.endswith("pd"):
+    pd = float(input_str[:-2])
+    kg = pd * 0.4535
+    print(f"对应制重量为{kg:.3f}公斤")
